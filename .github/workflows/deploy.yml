@@ -3,22 +3,25 @@ name: Deploy
 on:
   push:
     branches:
-      - master
+      - development
 
 jobs:
-phpcs:
-  name: Test
-  runs-on: ubuntu-latest
-  steps:
-    - name: Get Latest Code
-    - uses: actions/checkout@v2
+  cd:
+    runs-on: ubuntu-latest
 
-    - name: Use Node.js
-      uses: actions/setup-node@v2-beta
-      with:
-        node-version: "12"
+    steps:
+      - uses: actions/checkout@master
 
-      - name: Check Code Standards
-        run: |
-          npm install
-          npm run lint
+      - name: Deploy Using ssh
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST_PROD }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY_PROD }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cd /var/www/html/equinox_indo
+            chown -R $USER:www-data storage
+            chmod -R 775 storage
+            git pull origin development
+            composer install
