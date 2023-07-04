@@ -559,14 +559,6 @@ video {
   position: relative;
 }
 
-.top-5 {
-  top: 1.25rem;
-}
-
-.right-7 {
-  right: 1.75rem;
-}
-
 .-bottom-8 {
   bottom: -2rem;
 }
@@ -584,6 +576,10 @@ video {
 .mx-\[20vw\] {
   margin-left: 20vw;
   margin-right: 20vw;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mt-5 {
@@ -642,10 +638,6 @@ video {
   display: none;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .h-\[22vh\] {
   height: 22vh;
 }
@@ -654,20 +646,12 @@ video {
   height: 100%;
 }
 
-.max-h-0 {
-  max-height: 0px;
-}
-
-.w-6 {
-  width: 1.5rem;
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
 }
 
 .w-\[45\%\] {
@@ -702,20 +686,12 @@ video {
   max-width: 1024px;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .flex-col {
   flex-direction: column;
 }
 
 .place-items-center {
   place-items: center;
-}
-
-.items-center {
-  align-items: center;
 }
 
 .justify-center {
@@ -751,6 +727,11 @@ video {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
+.bg-blue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
 .bg-slate-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
@@ -773,6 +754,16 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-\[0\.3em\] {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+.px-\[1\.3em\] {
+  padding-left: 1.3em;
+  padding-right: 1.3em;
 }
 
 .py-12 {
@@ -799,13 +790,19 @@ video {
   text-align: center;
 }
 
-.font-poppins {
-  font-family: Poppins, sans-serif;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .font-black {
@@ -870,18 +867,24 @@ video {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.text-slate-100 {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
-.peer:checked ~ .peer-checked\:mt-8 {
-  margin-top: 2rem;
+.ubuntu_light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
 }
 
-.peer:checked ~ .peer-checked\:max-h-56 {
-  max-height: 14rem;
+.ubuntu_bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+.hover\:bg-blue-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 320px) {
@@ -1014,10 +1017,6 @@ video {
     margin-right: auto;
   }
 
-  .sm\:ml-24 {
-    margin-left: 6rem;
-  }
-
   .sm\:mb-20 {
     margin-bottom: 5rem;
   }
@@ -1030,16 +1029,8 @@ video {
     display: none;
   }
 
-  .sm\:max-h-full {
-    max-height: 100%;
-  }
-
   .sm\:flex-row {
     flex-direction: row;
-  }
-
-  .sm\:items-start {
-    align-items: flex-start;
   }
 
   .sm\:items-center {

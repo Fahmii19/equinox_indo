@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./dist/**/*.{html,js}"],
+  content: ["*.{html,js}"],
   theme: {
     screens: {
       xs: "320px",
@@ -8,9 +8,6 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-    },
-    fontFamily: {
-      poppins: ["Poppins", "sans-serif"],
     },
     extend: {},
   },

@@ -6,53 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Equinox - Spatial Asset Management</title>
 
-    <!-- Font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="dist/output.css" />
   </head>
 
-  <body class="font-poppins">
+  <body class="">
     <div class="overflow-x-hidden bg-gray-800">
       <div
-        class="relative flex flex-col overflow-hidden px-12 py-4 sm:mx-auto sm:flex-row sm:items-center"
+        class="relative flex justify-between flex-col overflow-hidden px-12 py-4 sm:mx-auto sm:flex-row sm:items-center"
       >
-        <h3 class="text-3xl font-black text-yellow-500">Equinox</h3>
-        <input type="checkbox" class="peer hidden" id="navbar-open" />
-        <label
-          class="absolute top-5 right-7 cursor-pointer hidden"
-          for="navbar-open"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
+        <div>
+          <h3 class="ubuntu_bold text-3xl font-black text-yellow-500">
+            Equinox
+          </h3>
+        </div>
+        <div>
+          <button
+            class="bg-blue-700 hover:bg-blue-800 text-white text-md py-[0.3em] px-[1.3em] mt-2 rounded-full"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </label>
-        <div
-          class="peer-checked:mt-8 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all sm:ml-24 sm:max-h-full sm:flex-row sm:items-start"
-        ></div>
+            Login
+          </button>
+        </div>
       </div>
 
       <section class="relative py-12 sm:py-16 lg:pt-20 xl:pb-0">
         <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="mx-auto max-w-3xl text-center">
             <h1
-              class="mt-5 font-bold text-white xs:text-3xl sm:text-5xl lg:text-7xl"
+              class="ubuntu_bold mt-5 font-bold text-slate-100 xs:text-3xl sm:text-5xl lg:text-7xl"
             >
               Think <br class="sm:hidden" />
               geospatial
@@ -79,17 +66,17 @@
               >
             </h1>
             <p
-              class="mx-auto mt-20 max-w-full sm:text-lg md:text-xl lg:text-xl leading-7 text-gray-400"
+              class="ubuntu_light mx-auto mt-20 max-w-full sm:text-lg md:text-xl lg:text-xl leading-7 text-gray-400"
             >
               Lelah dengan ArcGIS yang rumit, lambat, dan mahal?
             </p>
             <p
-              class="mx-auto mb-5 max-w-full md:text-xl lg:text-xl leading-7 text-gray-400"
+              class="ubuntu_light mx-auto mb-5 max-w-full md:text-xl lg:text-xl leading-7 text-gray-400"
             >
               Saatnya Anda mencoba <span class="font-bold">Equinox</span>.
             </p>
             <p
-              class="mx-auto max-w-full sm:text-lg md:text-xl lg:text-xl leading-7 text-gray-400"
+              class="ubuntu_light mx-auto max-w-full sm:text-lg md:text-xl lg:text-xl leading-7 text-gray-400"
             >
               <span class="font-bold">Equinox</span> adalah enjin geospasial
               terintegrasi untuk menampilkan kompilasi data spasial dan tabular
@@ -111,13 +98,13 @@
           class="mr-auto xs:pr-0 xs:mb-0 xs:mx-3.5 md:mb-0 md:mx-4 lg:mx-0 lg:mr-[4.5rem] lg:col-span-5 lg:pr-0"
         >
           <h1
-            class="max-w-2xl mb-4 text-3xl font-extrabold leading-none tracking-tight xs:mt-8 md:text-4xl md:mt-12 lg:mt-0 xl:text-5xl text-white"
+            class="max-w-2xl mb-4 text-3xl font-extrabold leading-none tracking-tight xs:mt-8 md:text-4xl md:mt-12 lg:mt-0 xl:text-5xl text-slate-100 ubuntu_bold"
           >
             <span class="text-blue-500">Peta</span>
             rencana kota yang komplet
           </h1>
           <p
-            class="xs:text-sm md:max-w-3xl md:text-lg md:mb-10 lg:max-w-2xl lg:mb-8 lg:text-xl font-light text-gray-400"
+            class="ubuntu_light xs:text-sm md:max-w-3xl md:text-lg md:mb-10 lg:max-w-2xl lg:mb-8 lg:text-md font-light text-gray-400"
           >
             Tambahkan layer sistem pipa air minum, riwayat banjir, sistem
             transportasi, atau peta penurunan tanah untuk memberi konteks pada
@@ -147,19 +134,19 @@
           class="mr-auto xs:mx-3.5 md:pl-0 md:mx-4 lg:mx-0 lg:ml-8 lg:pl-00 lg:col-span-5"
         >
           <h1
-            class="max-w-2xl mb-4 text-3xl font-extrabold leading-none tracking-tight text-white xs:mt-8 md:text-4xl md:mt-2 lg:mt-0 xl:text-5xl"
+            class="max-w-2xl mb-4 text-3xl font-extrabold leading-none tracking-tight text-slate-100 xs:mt-8 md:text-4xl md:mt-2 lg:mt-0 xl:text-5xl ubuntu_bold"
           >
             <span class="text-blue-500">Eksplorasi</span> aset secara visual
           </h1>
           <p
-            class="font-light text-gray-400 xs:text-sm md:max-w-3xl md:text-lg lg:mb-5 lg:text-xl lg:max-w-2xl mb-5"
+            class="ubuntu_light font-light text-gray-400 xs:text-sm md:max-w-3xl md:text-lg lg:mb-5 lg:text-md lg:max-w-2xl mb-5"
           >
             Perencanaan kota lebih kaya dengan data dan lokasi kios makanan,
             toko kelontong, gerbang tol, taman kota, hotel, kantor, stasiun
             kereta, klinik, dan banyak lagi.
           </p>
           <p
-            class="mb-6 font-light xs:mb-8 xs:text-sm md:text-lg md:max-w-3xl lg:text-xl lg:mb-8 lg:max-w-2xl text-gray-400"
+            class="ubuntu_light mb-6 font-light xs:mb-8 xs:text-sm md:text-lg md:max-w-3xl lg:text-md lg:mb-8 lg:max-w-2xl text-gray-400"
           >
             Untuk perusahaan dengan aset tersebar di banyak lokasi, manajemen
             aset akan lebih mudah bila dilakukan secara visual.
@@ -174,19 +161,19 @@
           class="mr-auto xs:pr-0 xs:mb-2 xs:mx-4 xs:mt-8 md:mt-12 md:mx-4 lg:mt-0 lg:mx-0 lg:ml-0 lg:mb-0 lg:mr-8 lg:pr-0 lg:col-span-5"
         >
           <h1
-            class="max-w-2xl mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-4xl xl:text-5xl text-white"
+            class="ubuntu_bold max-w-2xl mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-4xl xl:text-5xl text-slate-100"
           >
             <span class="text-blue-500">Kaitkan</span> dengan ketentuan zonasi
           </h1>
           <p
-            class="font-light xs:text-sm md:max-w-3xl md:mb-6 md:text-lg lg:mb-8 lg:max-w-2xl lg:text-xl text-gray-400"
+            class="ubuntu_light font-light xs:text-sm md:max-w-3xl md:mb-6 md:text-lg lg:mb-8 lg:max-w-2xl lg:text-md text-gray-400"
           >
             Ketentuan daerah berbeda-beda di setiap zona. Aturan bisnis juga
             bervariasi di wilayah yang berbeda. Setiap klik pada lokasi yang
             berbeda akan menampilkan informasi peraturan yang sesuai.
           </p>
           <p
-            class="font-light xs:text-sm md:max-w-3xl md:text-lg md:mb-10 lg:text-xl lg:mb-8 lg:max-w-2xl text-gray-400"
+            class="ubuntu_light font-light xs:text-sm md:max-w-3xl md:text-lg md:mb-10 lg:text-md lg:mb-8 lg:max-w-2xl text-gray-400"
           >
             Dengan arsitektur terbuka yang digunakan Equinox, perencana kota
             atau pengelola aset lebih fleksibel mengaitkan peraturan pada suatu
@@ -216,19 +203,20 @@
           class="mr-auto xs:mx-3.5 md:pl-0 md:mx-4 lg:mx-0 lg:col-span-5 lg:pl-0"
         >
           <h1
-            class="max-w-2xl mb-4 text-3xl font-extrabold leading-none tracking-tight xs:mt-6 md:text-4xl lg:mt-0 xl:text-5xl text-white"
+            class="max-w-2xl mb-4 text-3xl font-extrabold leading-none tracking-tight xs:mt-6 md:text-4xl lg:mt-0 xl:text-5xl text-slate-100 ubuntu_bold"
           >
-            <span class="text-blue-500">Komparasi</span> spasial
+            <span class="text-blue-500">Komparasi</span>
+            spasial
           </h1>
           <p
-            class="mb-5 xs:text-sm md:text-lg md:max-w-3xl lg:max-w-2xl lg:mb-5 lg:text-xl font-light text-gray-400"
+            class="ubuntu_light mb-5 xs:text-sm md:text-lg md:max-w-3xl lg:max-w-2xl lg:mb-5 lg:text-md font-light text-gray-400"
           >
             Mengapa lokasi A lebih baik dibanding lokasi B untuk membuka klinik
             kecantikan? Bagaimana demografi di wilayah tertentu bisa mendorong
             omzet penjualan minimarket?
           </p>
           <p
-            class="xs:text-sm md:text-lg md:max-w-3xl lg:max-w-2xl lg:mb-8 lg:text-xl mb-6 font-light text-gray-400"
+            class="ubuntu_light xs:text-sm md:text-lg md:max-w-3xl lg:max-w-2xl lg:mb-8 lg:text-md mb-6 font-light text-gray-400"
           >
             Temukan potensi investasi dengan kriteria evaluasi spasial yang
             tepat. Tambahkan hasil logic Machine Learning dengan Equinox.
@@ -239,7 +227,9 @@
       <div
         class="flex max-w-full p-[2.5rem] my-0 mr-[7.7vw] ml-[7.8vw] bg-slate-700"
       >
-        <div class="d:text-lg leading-7 text-gray-300 xs:text-sm lg:text-xl">
+        <div
+          class="ubuntu_light d:text-lg leading-7 text-gray-300 xs:text-sm lg:text-xl"
+        >
           Sebagai alternatif dari ArcGIS atau SAP S/4HANA yang terjangkau,
           Equinox adalah platform spasial yang tepat untuk menampilkan rencana
           kota atau manajemen aset perusahaan secara spasial di browser.
@@ -251,7 +241,7 @@
       >
         <div class="w-full">
           <div
-            class="xs:text-2xl xs:pt-10 md:text-3xl md:py-10 lg:py-10 lg:text-[25px] text-white font-semibold text-center"
+            class="ubuntu_bold xs:text-2xl xs:pt-10 md:text-3xl md:py-10 lg:py-10 lg:text-[25px] text-slate-100 font-semibold text-center"
           >
             Pengguna Equinox
           </div>
@@ -265,7 +255,7 @@
                 </div>
               </div>
               <div
-                class="text-m text-white text-center xs:mt-0 md:mt-4 lg:mt-4"
+                class="ubuntu_light text-m text-white text-center xs:mt-0 md:mt-4 lg:mt-4"
               >
                 Pemprov DKI Jakarta
               </div>
@@ -283,7 +273,7 @@
                 </div>
               </div>
               <div
-                class="text-m text-white text-center xs:mt-0 md:mt-4 lg:mt-4"
+                class="ubuntu_light text-m text-white text-center xs:mt-0 md:mt-4 lg:mt-4"
               >
                 Pemkot Tangerang Selatan
               </div>
@@ -299,7 +289,9 @@
                 />
               </div>
             </div>
-            <div class="text-m text-white text-center lg:mt-4 md:mt-4 xs:mt-0">
+            <div
+              class="ubuntu_light text-m text-white text-center lg:mt-4 md:mt-4 xs:mt-0"
+            >
               Pemkab Sumedang
             </div>
           </div>
@@ -314,7 +306,7 @@
         >
           <!-- <a href="mailto:equinox@astoge.com"> -->
           <p
-            class="max-w-screen mb-0 font-light lg:mb-0 md:text-lg lg:text-md text-white text-center"
+            class="ubuntu_light max-w-screen mb-0 font-light lg:mb-0 md:text-lg lg:text-md text-white text-center"
           >
             Email us at equinox@astoge.com
           </p>
